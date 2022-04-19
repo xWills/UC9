@@ -7,9 +7,10 @@
 .container-grid{
     display: flex;
     width: 1200px;
-    margin: 430px;
-   
-
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
     
 
 }
@@ -25,78 +26,31 @@ header {
     border: 10px solid #000000;
 
   }
-.menu {
-    
-    display: inline-flex;
-    margin-top: 420px;
-    
 
-    }
+.header-container {
 
-.navegacao nav {
-
-    
-    display: inline-flex;
-   
+    margin-left: 25%;
+    margin-top: 430px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 
 }
+
 .navegacao a {
 
-    margin-left: 120px;
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 200px;
     font-size: 30px;
-    line-height: 35px;
-    color: #000000;
-
-}
-
-
-
-.caixa  {
-
-    width: 239px;
-    height: 49px;
+    color: black;
+    background-color: white;
+    padding: 1rem;  
     background: #FFFEFE;
     border: 1px solid #000000;
-    display: flex;
-    justify-content: center;
-
-
-} 
-.ofertas{
- 
-    
-    position: absolute;
-    width: 97px;
-    height: 35px;
-    left: 610px;
-    top: 447px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 200px;
-    font-size: 30px;
-    color: #000000;
-
-}
-.novidades{
-
-    text-decoration: none;
-    position: absolute;
-    width: 138px;
-    height: 35px;
-    left: 870px;
-    top: 447px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 200px;
-    font-size: 30px;
-    line-height: 35px;
-    color: #000000;
-    
-
+   
 }
 .logo{
 
@@ -107,7 +61,7 @@ header {
     top: 71px;
 
 }
-.login{
+.login p{
 
     width: 191px;
     height: 220px;
@@ -115,26 +69,271 @@ header {
     top: 23px;
     text-decoration: none;
     position: absolute;
-    width: 191px;
-    height: 220px;
+    display: flex;
+    justify-content: space-between;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 35px;
     display: flex;
-    align-items: flex-end;
+    align-items:center;
     color: #FFFEFE;
 
 }
-.banner{
+.banner {
 
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 868px;
-    left: -1px;
-    top: 490px;
-    background: #000000;
-    border: 1px solid #FFFEFE;
-    box-sizing: border-box;
+    background-color:#000000;
+    border: 1px solid #fffefe;
+    background-size: cover;
+    
 }
+.posicao-imagem{
+
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.banner img {
+
+    border-radius: 50px;
+    width: 1000px;
+    
+    
+}
+.posicao-texto p{
+
+    position: absolute;
+    width: 385px;
+    height: 59px;
+    left: 420px;
+    top: 1223px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFEFE;
+        
+    
+}
+.texto p {
+
+    
+    width: 385px;
+    height: 59px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFEFE;
+        
+    
+}
+
+.banner h1{
+
+ margin-top: 60px;
+ color: #FFFEFE;
+ font-family: 'Roboto';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 30px;
+ line-height: 59px;
+ align-items: initial;
+ margin-left: 5%;
+
+}
+.secao-maisprocurados .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+.secao-maisprocurados {
+    background-color: white;
+    padding: 30px 0;
+
+  }
+.bloco-procurados{
+
+    margin-top: 50px;
+    width: 70%;
+    height: 90%;
+    color: black;
+}
+
+.bloco-procurados h2{
+    top: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+    
+}
+
+.card-procurados.container {
+
+    display: flex;   
+    
+    
+}
+.card-procurados {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+        
+    
+}
+.card-procurados p {
+
+    align-items: center;
+    color: black;
+    
+        
+    
+}
+.card-precos {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+        
+    
+}
+.secao-empromocao .container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+.secao-empromocao {
+    background-color: white;
+    padding: 30px 0;
+
+  }
+.bloco-empromocao{
+
+    margin-top: 400px;
+    width: 70%;
+    height: 90%;
+    color: black;
+}
+
+.bloco-empromocao h2{
+    top: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+    
+}
+
+.card-empromocao.container {
+
+    display: flex;   
+    
+    
+}
+.card-empromocao {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 60px; 
+    
+}
+.secao-banner2 img{
+
+    display: flex;
+    margin-top: 250px;
+    width: 100%;
+
+}
+footer{
+
+    background-color: black;
+    padding: 10px 0;
+
+}
+.rodape{
+
+    
+    margin-left: 200px;
+    
+}
+.links {
+    color: white;
+  }
+  
+.links h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+  }
+  
+.links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 150;
+    font-size: 15px;
+    line-height: 41px;
+  }
+.links p {
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 41px;
+    text-decoration: none;
+  }
+
+.links-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+.redes-sociais h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+  }
