@@ -9,18 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   
 </head>
-<body>
+<body onload= "renderizarProcurados()" >
   
   <header >
-    
     <div class="header-container">
-
-          <div class="logo">
-              <a href=""  >
-              <img src="img/logo.png" alt="" >
-              </a>
+          
+          <div class="busca">
+              <input id="campobusca" type="text" name="search" placeholder="O que está procurando">
+              <button onclick="Realizarbusca()" class="botao-cadastrar">Buscar</button>
           </div>
-
+              
+              <a class="logo"  href=""  >
+                <img src="img/logo.png" alt="" >
+              </a>
+              
           <div class="navegacao">
               <nav>
                   <a href=""  >CATEGORIAS</a>
@@ -30,7 +32,7 @@
           </div>
           
           <div class="login">
-            <p href="">Faça o login <br> ou <br> cadastre-se</p>
+            <a href=""><p href="">Faça o login <br> ou <br> cadastre-se</p></a>
             
           </div>
     
@@ -42,8 +44,9 @@
   
     <div class="banner container">
       <h1>O que temos de novo?</h1>
-         <div class="posicao-imagem">
+         <div class="carrosel" id="carrosel">
            <img src="img/Fortinite.png"></img> 
+           <img src="img/Controle_fundo.png"></img> 
          </div>
          <div class="posicao-texto">  
             <p>Monte seu setup!</p>   s
@@ -55,21 +58,25 @@
           <div class="bloco-procurados">
              <h2>Mais procurados</h2>
           </div>
-         <div class="card-procurados .container">
+
+         <!-- <div class="card-procurados-pai">
 
               <div class="card-procurados">
                 <img src="img/Cadeira.png">
-                <p>R$2000,00</p>
+                <a href="#"><p>Cadeira gamer<br>R$2500,00</p></a>
               </div>
               <div class="card-procurados">
                 <img src="img/PS5.png">
+                <a href="#"><p>Console PS5<br>R$5000,00</p></a>
               </div>
               <div class="card-procurados">
                 <img src="img/CPU.png">
+                <a href="#"><p>CPU gamer<br>R$7200,00</p></a>
               </div>
               <div class="card-procurados">
                 <img src="img/Mouse.png">
-              </div>
+                <a href="#"><p>Mouse gamer<br>R$1500,00</p></a>
+              </div> -->
                 
           </div>                
     </div>
@@ -80,21 +87,24 @@
       <div class="bloco-empromocao">
          <h2>Em promoção</h2>
       </div>
-     <div class="card-empromocao .container">
+     <div class="card-empromocao-pai">
 
           <div class="card-empromocao">
-            <img src="img/Monitor.png">
+              <img src="img/Monitor.png">
+              <a href="#"><p>Monitor 35"<br>R$3000,00</p></a>
           </div>
           <div class="card-empromocao">
             <img src="img/Controle.png">
+            <a href="#"><p>Controle PS5<br>R$800,00</p></a>
           </div>
           <div class="card-empromocao">
             <img src="img/Fifa.png">
+            <a href="#"><p>Fifa 2022<br>R$180,00</p></a>
           </div>
           <div class="card-empromocao">
             <img src="img/Godofwar.png">
-          </div>
-            
+            <a href="#"><p>God of war<br>R$150,00</p></a>
+          </div>    
       </div>                
 </div>
 </section>
@@ -133,10 +143,11 @@
             <p>Whatsapp:</p>
             <p>(011)xxxx-xxxx</p>
             <p>Tel:</p>
-            <p>(011)xxxx-xxxx</p>      
-          </div>
-          <div class="redes-sociais container">
-            <h2>Siga-nos</h2>
+            <p>(011)xxxx-xxxx</p>
+            <br>
+            <p>Siga nossas redes sociais</p>   
+            <a href="#"><img src="img/Insta.png"></a>
+            <a href="#"><img src="img/Face.png"></a>
           </div>
       </div>
 
@@ -145,6 +156,12 @@
 
 
 </footer>
+<script src="js/script.js"> </script>
+<script src="/js/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+
 
 
 
